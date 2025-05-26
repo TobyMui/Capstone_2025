@@ -5,11 +5,11 @@ import cv2
 
 '''Init for aruco detection'''
 marker_dict = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
-detector_params = aruco.DetectorParameters();
+detector_params = aruco.DetectorParameters()
 detector = aruco.ArucoDetector(marker_dict, detector_params)
 
 '''Variables for camera calibration'''
-data = np.load("../calib_data/MultiMatrix.npz")
+data = np.load("./calib_data/MultiMatrix.npz")
 camera_matrix = data["camMatrix"]
 dist_coeffs = data["distCoef"]
 
