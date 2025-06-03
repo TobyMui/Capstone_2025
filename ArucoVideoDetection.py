@@ -14,7 +14,7 @@ from multiprocessing import shared_memory
 # =============================================================================
 
 # Set designated marker ID (change to your target marker)
-global_designated_aruco = 24
+global_designated_aruco = 5
 
 # IPC flag for other processes
 global_aruco_detected_flag = 0
